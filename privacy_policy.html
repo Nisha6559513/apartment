@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Surya Bella Casa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    body{
+        background-color: rgb(214, 221, 204);
+    }
+
+</style>
+<body>
+  <nav>
+    <div class="logo">
+        <a href="index.html" class="logoimg">
+            <img src="images/logomain-removebg-preview.png" alt="">
+        </a>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="room.html">Rooms</a></li>
+        <li><a href="offer.html">Offers</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <span class="close-btn" onclick="document.getElementById('check').checked = false;">
+            <i class="fas fa-times"></i>
+        </span>
+    </ul>
+    <div class="right-section">
+        <span class="number">
+            <i class="fa-solid fa-phone-volume"></i>
+            <a href="tel:+919835923601" style="color: #D6BA57; text-decoration: none;"> +91 9835923601</a>
+        </span>
+        <span class="book" onclick="openPopup()">Book Now</span>
+    </div>
+</nav>
+
+    
+     <!-- Button to open the popup -->
+     <div class="popup-overlay" id="popupForm">
+      <div class="popup">
+        <button class="close-btn1" onclick="closePopup()">×</button>
+        <h2>Studio Apartment Booking</h2>
+        <form id="bookingForm">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <label for="" style="text-align: left;">Check-in Date</label>
+          <input type="date" placeholder="Check-in Date" required>
+          <label for="" style="text-align: left;">Check-Out Date</label>
+
+          <input type="date" placeholder="Check-out Date" required>
+          <select required>
+            <option value="" disabled selected>Select Apartment Type</option>
+            <option value="studio">Studio</option>
+            <option value="deluxe">Deluxe Studio</option>
+            <option value="penthouse">Penthouse Studio</option>
+          </select>
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class="hero-privacy">
+        <div>
+            <h1>Policy</h1>
+           
+        </div>
+    </div>
+
+
+      <div class="privacy-conten">
+           <h2>Privacy Policy</h2>
+
+           <p class="privacy-para"> Last updated December 2023.
+            This privacy notice (“Privacy Notice”) applies to the Surya Bella Casa . For more information about the Surya Bella Casa Group see</p>
+    
+           <p class="privacy-para">The Surya Bella Casa Group respects the privacy of every person who visits or registers with https://suryabellacasa.com (the “Site”) and who uses the services and products that we make available through our Site and our hotels (our “Services”).  This Privacy Notice also applies to other Surya Bella Casa websites such as msocial.com and the websites of other Surya Bella Casa brands and properties.  We are committed to protecting your privacy and to ensuring a safe online experience.
+
+           </p>
+
+           <h2>1. Purpose of this Notice</h2>
+           <p class="privacy-para">
+           This privacy notice (“Privacy Notice”) explains how we process any of your personal data that we might collect from you or which we have obtained from a third party, and the purposes for which we process your personal data. This Privacy Notice also sets out your rights in respect of our processing of your personal data.
+             
+           </p>
+
+           <p class="privacy-para">
+           This Privacy Notice will inform you of the nature of your personal data that is processed by us and how you can request that we delete, update, transfer and/or provide you with access to it.
+
+           </p>
+           <p class="privacy-para">
+            This Privacy Notice is intended to assist you in making informed decisions when using the Site and our Services. Please take a moment to read and understand it. Please note that it should be read in conjunction with our Terms of Website Use.
+
+           </p>
+    
+           <p class="privacy-para">
+            Please also note that this Privacy Notice only applies to the use of your personal data provided, or obtained by us directly. It does not apply to personal data collected during your communications with third parties.
+
+           </p>
+
+           <h2>2. Who are we and what do we do?</h2>
+           <p class="privacy-para">
+            The Surya Bella Casa Group includes  Reservations Services Limited , and various hotels and brands, together with their operating and/or management companies (the “Hotels”).
+           </p>
+           <p class="privacy-para">
+            The Hotels and their operating and/or management companies are ultimately owned by M&C Limited. A list of the Hotels is available .
+
+           </p>
+           <p class="privacy-para">
+            Each of these entities may act as a controller and will be responsible for handling your personal data.
+ 
+           </p>
+           <p class="privacy-para">
+            The controller of your personal data will be the MHR entity or entities with which you have an on-going relationship.
+
+           </p>
+
+           <p class="privacy-para">
+            Surya Bella Casa is the primary operating entity and data controller responsible for handling your personal data in connection with the operation of the Site and the provision of reservation and marketing Services.
+             
+           </p>
+           <p class="privacy-para">
+            Surya Bella Casa is a data controller responsible for handling your personal data in connection with the management of the My Millennium loyalty programme.
+
+           </p>
+           <p class="privacy-para">
+            Each Hotel also may act as a data controller responsible for the provision of Services at the respective Surya Bella Casa Group hotel(s) owned and/or operated by it.
+
+           </p>
+    
+
+           <h2>
+           3. What personal data do we collect and how do we use it?
+
+           </h2>
+           <p class="privacy-para">
+           We (and our service providers) use your personal data for legitimate business interests including the following:
+          <br>
+           <li>
+           to provide our Services to you, including enabling you to make, and us to accept, reservations online for our Hotels worldwide and enjoy our Services;
+
+           </li>
+           <li>
+            to create and operate an account or membership of a loyalty programme or promotion;
+
+           </li>
+           <li>
+            to verify your identity;
+           </li>
+           <li>
+            to help us improve our Services, and develop and market new products and services;
+
+           </li>
+           <li>
+            to carry out any requests made by you on  the Site;
+
+           </li>
+           <li>
+            to investigate or settle inquiries or disputes;
+
+           </li>
+           <li>
+            to comply with any applicable laws, court order, other judicial process, or the requirements of a regulator;
+
+           </li>
+           <li>
+            to enforce our agreements with you;
+
+           </li>
+           <li>
+            to protect any of our rights, property or safety or those of any third parties, including our other customers and users of the Site and visitors to our hotels;
+
+           </li>
+           <li>
+           to provide support for the provision of our Services; and
+
+           </li>
+           <li>
+           to use the information as otherwise required or permitted by law.
+             
+           </li>
+        
+        
+           </p>
+
+           <h2>
+           4. Confidentiality and security of your personal data
+
+           </h2>
+           <p class="privacy-para">
+            We are committed to keeping the personal data you provide to us secure and we will take reasonable precautions to protect your personal data from loss, misuse or alteration.
+                <li>
+                    Unauthorised access
+
+                </li>
+                <li>
+                    Improper use or disclosure
+
+                </li>
+                <li>
+                    Unauthorised modification, and
+
+                </li>
+                <li>
+                    Unlawful destruction or accidental loss.
+
+                </li>
+           </p>
+          
+      </div>
+
+    
+     <!-- footer Code Here -->
+     <div class="foot">
+        <div class="footer">
+          <div class="footer-content">
+            
+            <div class="footer-row">
+              <div class="footer-column">
+                <div class="footer-about">
+                  <h3>About Us</h3>
+                  <img src="images/footerlogo-removebg-preview.png" alt="">
+
+      
+                  <!-- <p class="footpara">
+                    Surya Bella Casa Hotel is a comfortable accommodation option located in Purnia, Bihar. It offers modern amenities and a convenient location for travelers. 
+                  </p> -->
+      
+                </div>
+              </div>
+      
+              <div class="footer-column">
+                <div class="footer-links">
+                  <h3>Links</h3>
+                  <a href="index.html">Home</a>
+                  <a href="dining.html">Dining</a>
+
+                 
+                  <a href="gallery.html">Gallery</a>
+                  <a href="contact.html">Contact Us</a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <div class="footer-links">
+                  <h3>Useful Links</h3>
+                  <a href="room.html">Rooms</a>
+                  <a href="offer.html">Offers</a>
+                  <a href="privacy_policy.html">Policy</a>
+
+                </div>
+              </div>
+              <div class="footer-column">
+                <div class="footer-contact">
+                  <h3>Get In Touch</h3>
+                  <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Suryalok Complex, opposite Vikass Market, near Bus Stand, Purnia, Bihar 854301
+                  </p>
+                  <p>
+                    <i class="fa fa-phone" aria-hidden="true"></i> +91-9835923601
+                  </p>
+                  <p>
+                    <i class="fa fa-envelope"></i> info@suryabellacasa.com
+                  </p>
+                  <div class="footer-social">
+                    Uncomment and add links if needed
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+       
+      
+      
+      
+        <div class="footerlast">
+          <div class="footer-copyright">
+            <div class="footer-row">
+              <div class="footer-column">
+                <p>Copyright © 2025 <a href="#">Surya Bella Casa</a>, All Rights
+                  Reserved.
+                </p>
+              </div>
+              <div class="footer-column">
+                <p>
+                  Developed & Maintained By
+                  <a href="https://www.easygrowtech.com/" style="color:  #D6BA57;">EasyGrowTech.Com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+         </div>
+      
+        </div>
+      </div>
+      
+
+
+
+      <a href="tel:+91-9835923601
+      " style="position:fixed;bottom:70px;right:10px;z-index:9999;"><img src="images/call-us.gif" alt="call us" title="tap to call us" style="height:50px;width:50px;"></a>
+      <a href="https://wa.me/919835923601
+      " style="position:fixed;bottom:10px;right:10px;z-index:9999;"><img src="images/whatsapp.webp" alt="whastapp" title="tap to chat with us on whastapp" style="height:50px;width:50px;"></a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

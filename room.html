@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Surya Bella Casa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+
+</style>
+<body>
+    <nav>
+      <div class="logo"><a href="index.html" class="logoimg" ><img src="images/logomain-removebg-preview.png" alt=""></a></div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <!-- <li><a href="about.html" >About</a></li> -->
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="offer.html">Offers</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <!-- <li><a href="service.html">Services</a></li> -->
+            <li><a href="contact.html">Contact Us</a></li>
+            <span class="close-btn" onclick="document.getElementById('check').checked = false;">
+                <i class="fas fa-times"></i>
+            </span>
+        </ul>
+        <div class="right-section">
+          <span class="number"><i class="fa-solid fa-phone-volume"></i><a href="tel:+919835923601" style="color: #D6BA57; text-decoration: none;">  +91 9835923601</a>
+          </span>
+
+            <span class="book" onclick="openPopup()">Book Now</span>
+            
+            
+        </div>
+    </nav>
+    
+     <!-- Button to open the popup -->
+     <div class="popup-overlay" id="popupForm">
+      <div class="popup">
+        <button class="close-btn1" onclick="closePopup()">×</button>
+        <h2>Studio Apartment Booking</h2>
+        <form id="bookingForm">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <label for="" style="text-align: left;">Check-in Date</label>
+          <input type="date" placeholder="Check-in Date" required>
+          <label for="" style="text-align: left;">Check-out Date</label>
+          <select required>
+            <option value="" disabled selected>Select Apartment Type</option>
+            <option value="studio">Studio</option>
+            <option value="deluxe">Deluxe Studio</option>
+            <option value="penthouse">Penthouse Studio</option>
+          </select>
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="hero-room">
+        <div>
+            <h1>Rooms</h1>
+           
+        </div>
+    </div>
+  
+
+    <div class="room-card">
+      <div class="room-image">
+          <img src="images/deluxroom.jpg" alt="Deluxe Room">
+      </div>
+      <div class="room-details">
+          <h2>Deluxe Room</h2>
+          <p>Our Deluxe Room is designed to provide a luxurious and comfortable stay. Perfect for both business and leisure travelers, it features elegant décor, spacious interiors, and modern amenities. The room comes with a large king-size bed, premium linens, and a private en-suite bathroom.</p>
+          <div class="icons">
+              <div>🍹</div>
+              <div>🛏️</div>
+              <div>📶</div>
+              <div>🍽️</div>
+              <div>☕</div>
+              <div>🚻</div>
+              <div>📺</div>
+          </div>
+      </div>
+      <div class="room-price">
+          <h3>Rs.</h3>
+          <p>PER NIGHT</p>
+          <a href="contact.html" class="more-details">MORE DETAILS →</a>
+      </div>
+    </div>
+
+
+
+    
+
+    
+    <div class="room-card">
+      <div class="room-image">
+          <img src="images/singleroom.jpg" alt="Deluxe Room">
+      </div>
+      <div class="room-details">
+          <h2>Single Room</h2>
+          <p>Our Single Room is the perfect choice for solo travelers seeking comfort and convenience. This cozy and well-appointed room is designed to make your stay relaxing and enjoyable. It comes with a comfortable single bed, high-quality linens, and a modern en-suite bathroom.</p>
+          <div class="icons">
+              <div>🍹</div>
+              <div>🛏️</div>
+              <div>📶</div>
+              <div>🍽️</div>
+              <div>☕</div>
+              <div>🚻</div>
+              <div>📺</div>
+          </div>
+      </div>
+      <div class="room-price">
+          <h3>Rs.</h3>
+          <p>PER NIGHT</p>
+          <a href="contact.html" class="more-details">MORE DETAILS →</a>
+      </div>
+    </div>
+
+    
+    <div class="room-card">
+      <div class="room-image">
+          <img src="images/familyroom.jpg" alt="Deluxe Room">
+      </div>
+      <div class="room-details">
+          <h2>Family Room</h2>
+          <p>Our Family Room offers the perfect space for families to relax and enjoy a comfortable stay. Designed with ample space and thoughtful amenities, this room accommodates up to four guests, featuring a combination of a large king-size bed and two single beds for maximum comfort.</p>
+          <div class="icons">
+              <div>🍹</div>
+              <div>🛏️</div>
+              <div>📶</div>
+              <div>🍽️</div>
+              <div>☕</div>
+              <div>🚻</div>
+              <div>📺</div>
+          </div>
+      </div>
+      <div class="room-price">
+          <h3>Rs.</h3>
+          <p>PER NIGHT</p>
+          <a href="contact.html" class="more-details">MORE DETAILS →</a>
+      </div>
+    </div>
+
+    
+    <div class="room-card">
+      <div class="room-image">
+          <img src="images/double room.jpg" alt="Deluxe Room">
+      </div>
+      <div class="room-details">
+          <h2>Double Room</h2>
+          <p>Our Double Room is the ideal choice for couples or two guests seeking a comfortable and stylish stay. This room features a spacious queen-size bed with premium linens, offering a restful night’s sleep. With a modern design and a focus on relaxation, the room provides everything you need for a peaceful and enjoyable stay.</p>
+          <div class="icons">
+              <div>🍹</div>
+              <div>🛏️</div>
+              <div>📶</div>
+              <div>🍽️</div>
+              <div>☕</div>
+              <div>🚻</div>
+              <div>📺</div>
+          </div>
+      </div>
+      <div class="room-price">
+          <h3>Rs.</h3>
+          <p>PER NIGHT</p>
+          <a href="index.html" class="more-details">MORE DETAILS →</a>
+      </div>
+    </div>
+   
+
+
+
+
+
+
+    <div class="hotel-offer">
+      <h1>Related Rooms</h1>
+     
+    <div class="slider owl-carousel">
+      <div class="card">
+        <div class="img">
+          <img src="images/roomgallery1.jpg" alt="">
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="images/roomgallery2.jpg" alt="">
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="images/roomgallery3.jpg" alt="">
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="images/roomgallery4.jpg" alt="">
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="images/roomgallery5.jpg" alt="">
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="images/roomgallery6.jpg" alt="">
+        </div>
+        
+      </div>
+    </div>
+    </div>
+    
+
+     <!-- footer -->
+ 
+
+     <div class="foot">
+      <div class="footer">
+        <div class="footer-content">
+          
+          <div class="footer-row">
+            <div class="footer-column">
+              <div class="footer-about">
+                <h3>About Us</h3>
+                <img src="images/footerlogo-removebg-preview.png" alt="">
+    
+                <!-- <p class="footpara">
+                  Surya Bella Casa Hotel is a comfortable accommodation option located in Purnia, Bihar. It offers modern amenities and a convenient location for travelers. 
+                </p> -->
+    
+              </div>
+            </div>
+    
+            <div class="footer-column">
+              <div class="footer-links">
+                <h3>Links</h3>
+                <a href="index.html">Home</a>
+                <a href="dining.html">Dining</a>
+
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <div class="footer-links">
+                <h3>Useful Links</h3>
+                <a href="room.html">Rooms</a>
+                <a href="offer.html">Offers</a>
+                <a href="privacy_policy.html">Policy</a>
+
+              </div>
+            </div>
+            <div class="footer-column">
+              <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <p>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Suryalok Complex, opposite Vikass Market, near Bus Stand, Purnia, Bihar 854301
+                </p>
+                <p>
+                  <i class="fa fa-phone" aria-hidden="true"></i> +91-9835923601
+                </p>
+                <p>
+                  <i class="fa fa-envelope"></i> info@suryabellacasa.com
+                </p>
+                <div class="footer-social">
+                  Uncomment and add links if needed
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+     
+    
+    
+    
+      <div class="footerlast">
+        <div class="footer-copyright">
+          <div class="footer-row">
+            <div class="footer-column">
+              <p>Copyright © 2025 <a href="#">Surya Bella Casa</a>, All Rights
+                Reserved.
+              </p>
+            </div>
+            <div class="footer-column">
+              <p>
+                Developed & Maintained By
+                <a href="https://www.easygrowtech.com/" style="color:  #D6BA57;">EasyGrowTech.Com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+       </div>
+    
+      </div>
+    </div>
+      
+  
+  
+  
+    <a href="tel:+91-9835923601
+      " style="position:fixed;bottom:70px;right:10px;z-index:9999;"><img src="images/call-us.gif" alt="call us" title="tap to call us" style="height:50px;width:50px;"></a>
+      <a href="https://wa.me/919835923601
+      " style="position:fixed;bottom:10px;right:10px;z-index:9999;"><img src="images/whatsapp.webp" alt="whastapp" title="tap to chat with us on whastapp" style="height:50px;width:50px;"></a>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="script.js"></script>
+  
+      </body>
+  </html>
+  

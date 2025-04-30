@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Surya Bella Casa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+
+</style>
+<body>
+  <nav>
+    <div class="logo">
+        <a href="index.html" class="logoimg">
+            <img src="images/logomain-removebg-preview.png" alt="">
+        </a>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="room.html">Rooms</a></li>
+        <li><a href="offer.html">Offers</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <span class="close-btn" onclick="document.getElementById('check').checked = false;">
+            <i class="fas fa-times"></i>
+        </span>
+    </ul>
+    <div class="right-section">
+        <span class="number">
+            <i class="fa-solid fa-phone-volume"></i>
+            <a href="tel:+919835923601" style="color: #D6BA57; text-decoration: none;"> +91 9835923601</a>
+        </span>
+        <span class="book" onclick="openPopup()">Book Now</span>
+    </div>
+</nav>
+
+    
+     <!-- Button to open the popup -->
+     <div class="popup-overlay" id="popupForm">
+      <div class="popup">
+        <button class="close-btn1" onclick="closePopup()">×</button>
+        <h2>Studio Apartment Booking</h2>
+        <form id="bookingForm">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <label for="" style="text-align: left;">Check-in Date</label>
+          <input type="date" placeholder="Check-in Date" required>
+          <label for="" style="text-align: left;">Check-Out Date</label>
+
+          <input type="date" placeholder="Check-out Date" required>
+          <select required>
+            <option value="" disabled selected>Select Apartment Type</option>
+            <option value="studio">Studio</option>
+            <option value="deluxe">Deluxe Studio</option>
+            <option value="penthouse">Penthouse Studio</option>
+          </select>
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- .......................................................   -->
+    <div style="padding-top:70px ;">
+    <div class="hero-section"  >
+        <video class="hero-video" autoplay loop muted>
+            <source src="https://www.millenniumhotels.com/mhb-media/regions/asia/siingapore/studiomhotelsingapore/videos/mhr_studiomsingapore_20240218_c.mp4?rev=71559e43ff074649a03552a3c606d761" type="video/mp4">
+           
+        </video>
+        <div class="hero-content">
+            <div>
+                <h1>Welcome to Our Studio Apartment Booking</h1>
+                <p>Surya Bella Casa ensures a blend of comfort and elegance. </p>
+                <!-- <a href="#learn-more">Learn More</a> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- -------------------------------------------------------- -->
+
+    <!-- <div class="bookformhead">
+    <div class="booking-form">
+       
+        <div class="form-group">
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin">
+        </div>
+        <div class="form-group">
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout">
+        </div>
+        <div class="form-group">
+            <label for="guests">Guests</label>
+            <input type="text" id="guests" placeholder="2 Adults 0 Children 1 Room">
+        </div>
+        <div class="form-group">
+            <button id="bookNow" >Book Now</button>
+        </div>
+    </div>
+
+</div> -->
+
+
+
+
+<section>
+    <div class="main-about">
+        <div class="about-left">
+            <h3>About</h3>
+            
+            <h1>We Are The Leader In The Rental Studio Appartment</h1>
+            <p>Surya Bella Casa in Purnia is a well-rated hotel offering comfortable accommodations. It provides deluxe rooms suitable for different types of guests. The hotel is conveniently located, with Purnia Court Railway Station about 4.1 km away and Purnea Junction Railway Station approximately 7.5 km away. Guests have appreciated its accessibility to business and commercial areas.</p>
+            <div class="form-group">
+                <a href="contact.html"><button id="bookNow" >Know more</button></a>
+            </div>
+        </div>
+
+        <div class="about-right">
+           <img src="images/gaurcitucenter.jpg" alt="about-image">
+        </div>
+    </div>
+</section>
+
+
+
+<div class="hotel-offer">
+<h1>Our Rooms</h1>
+  <div class="dashed"></div>
+<section class="carousel-section">
+  
+    <div class="container">
+      <div class="row">
+        <!-- First Carousel -->
+        <div class="carousel-container">
+          <div class="carousel" id="carouselOne">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="loft5.jpg" alt="Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="loft6.jpg" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="loft4.png" alt="Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" onclick="prevSlide('carouselOne')">&#10094;</button>
+            <button class="carousel-control-next" onclick="nextSlide('carouselOne')">&#10095;</button>
+          </div>
+          <div class="cardmain">
+            <div class="card">
+                <span><h2 style="text-align: left;">Premier Loft</h2></span>
+                <p class="cardpara"> Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                  consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                  vulputate eget, arcu.</p>
+                <div class="form-group">
+                    <button id="bookNow"  onclick="openPopup()">Book Now</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+       
+  
+        <!-- Second Carousel -->
+        <div class="carousel-container">
+          <div class="carousel" id="carouselTwo">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="bed1.jpg" alt="Image 4">
+              </div>
+              <div class="carousel-item">
+                <img src="bed2.jpg" alt="Image 5">
+              </div>
+              <div class="carousel-item">
+                <img src="bed3.jpg" alt="Image 6">
+                 
+   
+              </div>
+            </div>
+            <button class="carousel-control-prev" onclick="prevSlide('carouselTwo')">&#10094;</button>
+            <button class="carousel-control-next" onclick="nextSlide('carouselTwo')">&#10095;</button>
+          </div>
+          <div class="cardmain">
+            <div class="card">
+                <span><h2 style="text-align: left;">Studio Loft with Sofa Bed</h2></span>
+                <p class="cardpara"> Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                  consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                  vulputate eget, arcu.</p>
+                <div class="form-group">
+                    <button id="bookNow"  onclick="openPopup()">Book Now</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+  
+
+  <div class="hero-section1">
+</div>
+    <div class="content-box1">
+      <p class="text-uppercase text-muted" style="font-size: 0.9rem; color: #6c757d;">Western/Asian</p>
+      <h1>MEMO Cafe & Breeze</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nesciunt facilis illo provident ea.</p>
+      <div>
+        <a href="dining.html"  >View Restaurant</a>
+        <a href="#" class="secondary" onclick="openPopup()">Book a Table</a>
+      </div>
+   
+  </div>
+  
+<!-- --------------------------------- -->
+ 
+
+
+
+
+
+  <!-- <div class="container2">
+    <h1>Hotel Offers</h1>
+    <a href="#" class="see-all">SEE ALL OFFERS</a>
+    <div class="offers">
+      <div class="offer-card">
+        <div class="offer-image">
+          <img src="https://th.bing.com/th/id/OIP.djEt-5XRwb2x3sgP1x-kXwHaEo?w=271&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Offer 1">
+        </div>
+        <div class="offer-content">
+          <div class="offer-location">Asia</div>
+          <div class="offer-title">Welcome 2025</div>
+          <div class="offer-button">
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-image">
+          <img src="https://th.bing.com/th/id/OIP.djEt-5XRwb2x3sgP1x-kXwHaEo?w=271&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Offer 2">
+        </div>
+        <div class="offer-content">
+          <div class="offer-location">Asia</div>
+          <div class="offer-title">Book Early And Save with Breakfast</div>
+          <div class="offer-button">
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-image">
+          <img src="https://th.bing.com/th/id/OIP.djEt-5XRwb2x3sgP1x-kXwHaEo?w=271&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Offer 3">
+        </div>
+        <div class="offer-content">
+          <div class="offer-location">Asia</div>
+          <div class="offer-title">Stay with More</div>
+          <div class="offer-button">
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="hotel-offer">
+  <h1>Hotel Offers</h1>
+  <div class="dashed"></div>
+
+  <div class="container-card">
+   
+    <div class="cardoffer">
+      <img src="hotelofferimage.jpg" alt="Card 1">
+   
+    <div class="carddesc">
+      <div class="cardoff">
+       <p> India <br>
+        </p>
+        <h2>Lunar Getaways</h2>
+        <div class="form-group">
+          <button id="bookNow"  onclick="openPopup()">Book Now</button>
+      </div>
+      </div>
+    </div>
+  </div>
+    <div class="cardoffer">
+      <img src="breakfastimage.jpg" alt="Card 2">
+      <div class="carddesc">
+        <div class="cardoff">
+         <p> India <br>
+         </p>
+         <h2>Book Early And Save with Breakfast</h2>
+          <div class="form-group">
+            <button id="bookNow"  onclick="openPopup()">Book Now</button>
+        </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="cardoffer">
+      <img src="havefun.jpg" alt="Card 3">
+      <div class="carddesc">
+        <div class="cardoff">
+         <p> India <br>
+         </p>
+         <h2>Stay With More</h2>
+          <div class="form-group">
+            <button id="bookNow"  onclick="openPopup()">Book Now</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<div class="hotel-offer">
+  <h1>Our Gallery</h1>
+  <div class="dashed"></div>
+<div class="slider owl-carousel">
+  <div class="card">
+    <div class="img">
+      <img src="loft2.jpg" alt="">
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="img">
+      <img src="loft3.jpg" alt="">
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="img">
+      <img src="loft4.png" alt="">
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="img">
+      <img src="loft5.jpg" alt="">
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="img">
+      <img src="loft6.jpg" alt="">
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="img">
+      <img src="loftimg.jpg" alt="">
+    </div>
+    
+  </div>
+</div>
+</div>
+
+  
+<div class="container1">
+  <h2>Frequently Asked Questions about <span>General Questions</span></h2>
+  <div class="faq-item">
+    <div class="faq-question">What are the check-in and check-out times?</div>
+    <div class="faq-answer">
+      <p>Check-in starts at 2:00 PM, and check-out is until 12:00 PM.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Does the hotel have on-site parking?</div>
+    <div class="faq-answer">
+      <p>Yes, on-site parking is available.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Do you provide Travel Adapters?</div>
+    <div class="faq-answer">
+      <p>Travel adapters are available at the front desk upon request.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Do you have WiFi?</div>
+    <div class="faq-answer">
+      <p>Yes, complimentary WiFi is available for all guests.</p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="testimonial">
+    <div class="hotel-offer1">
+    <h1>Client Review</h1>
+    <div class="dashed1"></div>
+    <br>
+  </div>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis metus et orci ultrices." </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="name">John Doe</div>
+        <div class="designation">CEO, Company</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Mauris egestas arcu eget augue tincidunt, eu auctor felis pharetra. Integer id lacus purus."</p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="name">Jane Smith</div>
+        <div class="designation">Marketing Director, Business Corp</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque."</p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="name">Sam Wilson</div>
+        <div class="designation">Product Manager, Tech Solutions</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+ 
+
+<div class="foot">
+  <div class="footer">
+    <div class="footer-content">
+      
+      <div class="footer-row">
+        <div class="footer-column">
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <img src="images/footerlogo-removebg-preview.png" alt="">
+            <!-- <p class="footpara">
+              Surya Bella Casa Hotel is a comfortable accommodation option located in Purnia, Bihar. It offers modern amenities and a convenient location for travelers. 
+            </p> -->
+
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <div class="footer-links">
+            <h3>Links</h3>
+            <a href="index.html">Home</a>
+            <a href="dining.html">Dining</a>
+           
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-links">
+            <h3>Useful Links</h3>
+            <a href="room.html">Rooms</a>
+            <a href="offer.html">Offers</a>
+            <a href="#">Term & Condition</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-contact">
+            <h3>Get In Touch</h3>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Suryalok Complex, opposite Vikass Market, near Bus Stand, Purnia, Bihar 854301
+            </p>
+            <p>
+              <i class="fa fa-phone" aria-hidden="true"></i> +91-9835923601
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i> info@suryabellacasa.com
+            </p>
+            <div class="footer-social">
+              Uncomment and add links if needed
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ 
+
+
+
+  <div class="footerlast">
+    <div class="footer-copyright">
+      <div class="footer-row">
+        <div class="footer-column">
+          <p>Copyright © 2025 <a href="#">Surya Bella Casa</a>, All Rights
+            Reserved.
+          </p>
+        </div>
+        <div class="footer-column">
+          <p>
+            Developed & Maintained By
+            <a href="https://www.easygrowtech.com/" style="color:  #D6BA57;">EasyGrowTech.Com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+   </div>
+
+  </div>
+</div>
+
+ 
+<a href="tel:+91-9835923601
+" style="position:fixed;bottom:70px;right:10px; z-index:9999;"><img src="images/call-us.gif" alt="call us" title="tap to call us" style="height:50px;width:50px;"></a>
+<a href="https://wa.me/919835923601
+" style="position:fixed;bottom:10px;right:10px; z-index:9999;"><img src="images/whatsapp.webp" alt="whastapp" title="tap to chat with us on whastapp" style="height:50px;width:50px;"></a>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current page URL
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // Select all navbar links
+    let navLinks = document.querySelectorAll(".nav-links li a");
+
+    navLinks.forEach(link => {
+        let linkPage = link.getAttribute("href");
+
+        // Remove active class from all links
+        link.classList.remove("active");
+
+        // Add active class to the current page link
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+
+ 
+
+</script>
+    </body>
+</html>

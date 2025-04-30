@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Surya Bella Casa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+
+</style>
+<body>
+    <nav>
+      <div class="logo"><a href="index.html" class="logoimg" ><img src="images/logomain-removebg-preview.png" alt=""></a></div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <!-- <li><a href="about.html" >About</a></li> -->
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="offer.html">Offers</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <!-- <li><a href="service.html">Services</a></li> -->
+            <li><a href="contact.html">Contact Us</a></li>
+            <span class="close-btn" onclick="document.getElementById('check').checked = false;">
+                <i class="fas fa-times"></i>
+            </span>
+        </ul>
+        <div class="right-section">
+          <span class="number"><i class="fa-solid fa-phone-volume"></i><a href="tel:+919835923601" style="color: #D6BA57; text-decoration: none;">  +91 9835923601</a>
+          </span>
+
+            <span class="book" onclick="openPopup()">Book Now</span>
+            
+            
+        </div>
+    </nav>
+    
+     <!-- Button to open the popup -->
+     <div class="popup-overlay" id="popupForm">
+      <div class="popup">
+        <button class="close-btn1" onclick="closePopup()">×</button>
+        <h2>Studio Apartment Booking</h2>
+        <form id="bookingForm">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <label for="" style="text-align: left;">Check-in Date</label>
+          <input type="date" placeholder="Check-in Date" required>
+          <label for="" style="text-align: left;">Check-out Date</label>
+
+          <input type="date" placeholder="Check-out Date" required>
+          <select required>
+            <option value="" disabled selected>Select Apartment Type</option>
+            <option value="studio">Studio</option>
+            <option value="deluxe">Deluxe Studio</option>
+            <option value="penthouse">Penthouse Studio</option>
+          </select>
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ----------------------------hero dining------------------------------- -->
+
+   
+   
+   
+    <div class="hero-offer">
+        <div>
+            <h1>Explore Our Offers</h1>
+           
+        </div>
+    </div>
+
+ 
+    <div class="containersection">
+      <div class="boxsection">
+          <h2>About the Hotel</h2>
+          <p>Surya Bella Casa in Purnia is a well-rated hotel offering comfortable accommodations. It provides deluxe rooms suitable for different types of guests. The hotel is conveniently located, with Purnia Court Railway Station about 4.1 km away and Purnea Junction Railway Station approximately 7.5 km away. Guests have appreciated its accessibility to business and commercial areas.</p>
+      </div>
+      <div class="boxsection">
+          <h2>Contact Us</h2>
+          <ul class="contact-details">
+              <li><i class="fas fa-phone"></i> +91-9835923601</li>
+              <li><i class="fas fa-envelope"></i> info@suryabellacasa.com</li>
+              <li><i class="fas fa-map-marker-alt"></i>  Suryalok Complex, opposite Vikass Market, near Bus Stand, Purnia, Bihar 854301</li>
+          </ul>
+      </div>
+  </div>
+
+
+<!-- 
+    <div class="hotel-offer">
+        
+      
+        <div class="container-cardpage">
+         
+          <div class="cardofferpage">
+            <img src="hotelofferimage.jpg" alt="Card 1">
+         
+          <div class="carddescpage">
+            <div class="cardoffpage">
+             <p class="india"> India <br>
+              </p>
+              <h4>Book Early And Save with Breakfast</h4> <br>
+              <p>Up to 27% Off | Book at least 7 days or more in advance and enjoy an exclusive discount for both room-only and with breakfast rate!</p>
+
+              <div class="form-group">
+                <button id="bookNow"  onclick="openPopup()">Book Now</button>
+            </div>
+            </div>
+          </div>
+        </div>
+          
+         
+          <div class="cardofferpage">
+            <img src="havefun.jpg" alt="Card 3">
+            <div class="carddescpage">
+              <div class="cardoffpage">
+               <p> India <br>
+               </p>
+               <h2>Stay With More</h2>
+                <div class="form-group">
+                  <button id="bookNow"  onclick="openPopup()">Book Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+       -->
+
+      
+  
+
+       <div class="roomsection">
+        <div class="containerpage">
+        
+          <!-- First Card -->
+          <div class="offer-cardpage">
+              <img src="images/earlybreakfast.jpg" alt="Offer Image">
+              <div class="badge-icon">PAY NOW</div>
+              <div class="offer-cardpage-content">
+                  <small style="color: gray;">India</small>
+                  <h5>Book Early And Save with Breakfast</h5>
+                  <p>Up to 27% Off | Book at least 7 days or more in advance and enjoy an exclusive discount for both room-only and with breakfast rate!
+  
+                  </p>
+                  <button class="book-now-btn" onclick="openPopup()">BOOK NOW</button>
+              </div>
+          </div>
+      
+          <!-- Second Card -->
+          <div class="offer-cardpage">
+              <img src="images/swimming-pool-cost.jpeg" alt="Offer Image">
+              <div class="badge-icon">PACKAGES</div>
+              <div class="offer-cardpage-content">
+                  <small style="color: gray;">India</small>
+                  <h5>Stay With More</h5>
+                  <p>Unlock exclusive savings and complimentary perks to elevate your stay.
+  
+                  </p>
+                  <button class="book-now-btn" onclick="openPopup()">BOOK NOW</button>
+              </div>
+          </div>
+  
+          <div class="offer-cardpage">
+            <img src="images/enjoyment.jpg" alt="Offer Image">
+            <div class="badge-icon">Save</div>
+            <div class="offer-cardpage-content">
+                <small style="color: gray;">India</small>
+                <h5>The Flexible Rate with Breakfast</h5>
+                <p>Enjoy the freedom to modify your booking at no additional cost!
+  
+                </p>
+                <button class="book-now-btn" onclick="openPopup()">BOOK NOW</button>
+            </div>
+        </div>
+    
+        <!-- Second Card -->
+        <div class="offer-cardpage">
+            <img src="images/brushbrew.jpg" alt="Offer Image">
+            <div class="badge-icon">Dining</div>
+            <div class="offer-cardpage-content">
+                <small style="color: gray;">Dining</small>
+                <h5>Brush and Brew</h5>
+                <p>Dive into figurine painting today at Memo Cafe.
+  
+                </p>
+                <button class="book-now-btn" onclick="openPopup()">BOOK NOW</button>
+            </div>
+        </div>
+
+        <div class="offer-cardpage">
+          <img src="images/offer5.jpg" alt="Offer Image">
+          <div class="badge-icon">Pay Now</div>
+          <div class="offer-cardpage-content">
+              <small style="color: gray;">India</small>
+              <h5>Stay More For Less with Breakfast</h5>
+              <p>Book a stay with us of 7 nights or more and enjoy up to 32% off for both room-only and with breakfast rate!
+
+              </p>
+              <button class="book-now-btn" onclick="openPopup()">BOOK NOW</button>
+          </div>
+      </div>
+  
+      <!-- Second Card -->
+      <div class="offer-cardpage">
+          <img src="images/offer6.jpg" alt="Offer Image">
+          <div class="badge-icon">Dining</div>
+          <div class="offer-cardpage-content">
+              <small style="color: gray;">Dining</small>
+              <h5>Memo Dining Promotions</h5>
+              <p>Enjoy dining promotion at Memo. View a variety of food offers at our restaurant!
+
+              </p>
+              <button class="book-now-btn" onclick="openPopup()">BOOK NOW</button>
+          </div>
+      </div>
+
+
+      </div>
+       </div>
+
+
+
+       <!-- -------------------------------------------------- -->
+     
+       <div class="foot">
+        <div class="footer">
+          <div class="footer-content">
+            
+            <div class="footer-row">
+              <div class="footer-column">
+                <div class="footer-about">
+                  <h3>About Us</h3>
+                  <img src="images/footerlogo-removebg-preview.png" alt="">
+
+      
+                  <!-- <p class="footpara">
+                    Surya Bella Casa Hotel is a comfortable accommodation option located in Purnia, Bihar. It offers modern amenities and a convenient location for travelers. 
+                  </p> -->
+      
+                </div>
+              </div>
+      
+              <div class="footer-column">
+                <div class="footer-links">
+                  <h3>Links</h3>
+                  <a href="index.html">Home</a>
+                  <a href="dining.html">Dining</a>
+
+                 
+                  <a href="gallery.html">Gallery</a>
+                  <a href="contact.html">Contact Us</a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <div class="footer-links">
+                  <h3>Useful Links</h3>
+                  <a href="room.html">Rooms</a>
+                  <a href="offer.html">Offers</a>
+                  <a href="privacy_policy.html">Policy</a>
+
+                </div>
+              </div>
+              <div class="footer-column">
+                <div class="footer-contact">
+                  <h3>Get In Touch</h3>
+                  <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Suryalok Complex, opposite Vikass Market, near Bus Stand, Purnia, Bihar 854301
+                  </p>
+                  <p>
+                    <i class="fa fa-phone" aria-hidden="true"></i> +91-9835923601
+                  </p>
+                  <p>
+                    <i class="fa fa-envelope"></i> info@suryabellacasa.com
+                  </p>
+                  <div class="footer-social">
+                    Uncomment and add links if needed
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+       
+      
+      
+      
+        <div class="footerlast">
+          <div class="footer-copyright">
+            <div class="footer-row">
+              <div class="footer-column">
+                <p>Copyright © 2025 <a href="#">Surya Bella Casa</a>, All Rights
+                  Reserved.
+                </p>
+              </div>
+              <div class="footer-column">
+                <p>
+                  Developed & Maintained By
+                  <a href="https://www.easygrowtech.com/" style="color:  #D6BA57;">EasyGrowTech.Com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+         </div>
+      
+        </div>
+      </div>
+      
+      <a href="tel:+91-9835923601
+      " style="position:fixed;bottom:70px;right:10px;z-index:9999;"><img src="images/call-us.gif" alt="call us" title="tap to call us" style="height:50px;width:50px;"></a>
+      <a href="https://wa.me/919835923601
+      " style="position:fixed;bottom:10px;right:10px;z-index:9999;"><img src="images/whatsapp.webp" alt="whastapp" title="tap to chat with us on whastapp" style="height:50px;width:50px;"></a>
+   <!-- ---------------------js------------------------------------ -->
+    <script src="script.js"></script>
+
+</body>
+</html>
